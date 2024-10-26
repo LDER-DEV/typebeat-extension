@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name":"TYPEBEAT",
+  "description": "an extention for quick youtube to mp3 converison",
+  "version": "1.0",
+  "permissions": ["https://flipmode.up.railway.app/"],
+  "action":{
+    "default_popup":"hello.html",
+    "default_icon":"typebeat.png"
+  }
+}
