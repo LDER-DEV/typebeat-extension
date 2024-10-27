@@ -5,7 +5,8 @@
   "version": "1.0",
   "content_scripts":[
     {
-      "js": ["main.js"]
+      "js": ["main.js"],
+      "css":["style.css"]
     }
   ],
   "permissions": ["https://flipmode.up.railway.app/"],
