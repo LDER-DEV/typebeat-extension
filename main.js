@@ -3,7 +3,7 @@ const button = document.querySelector('button');
 
 async function flipMode(event) {
   event.preventDefault();
-  const url = input.value;
+  const url = input.value.trim();
 
   try {
     const response = await fetch(`https://flipmode.up.railway.app/api/download?url=${url}`, {
