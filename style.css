@@ -1,12 +1,6 @@
-html {
-    display: flex;
+html { 
     color: #cfef00;
     border-radius: 20px;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
 }
 form{
     display:flex;
@@ -28,7 +22,7 @@ button {
   }
   
   button:hover {
-    background: #c4e201;
+    background: #cfef00;
   }
   
   button > svg {
@@ -62,12 +56,50 @@ button {
     transition: 0.5s;
   }
   html{
-    background-color: gray
+    background-color: #2b2b2b
   }
   body {
+    display:flex;
+    flex-direction: column;
     width: 350px;
     height: 100px;
     border-radius: 15px;
     overflow: hidden;
+  }
+  .logo{
+    width:150px;
+    padding:0;
+    margin:0;
+    align-self:center; 
+    border: 2px solid #cfef00 ;
+    border-radius: 20px;
+  }
+  /* animations */
+  .logo{
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
+
+  @keyframes shadow-pop-tr {
+    0% {
+      box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+      transform: translateX(-8px) translateY(8px);
+    }
+  }
+
+  h1{
+	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   
