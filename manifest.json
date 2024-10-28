@@ -1,14 +1,9 @@
 {
   "manifest_version": 3,
+  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyY5xNQ/qgAIvHFA8W1aaJTMexw3MpRT9FKZ3sXoDI/4WUr5W2jceqR7xJE1vhPuJgDXoCat9kvJ/a7c9kVj7QWIWIsNXJvZ3ItYqVSsOXnVxUINJQEyrxr05KkMtlViCytp3shfhnRCbeke8oKVszpuluuDXj9z8kZMyFJVi5HU7YrwIbUu80ujaujyEdS5h8lz8RKcBmMZTfmo8oSLi1ptXvJ2nhBewR749FAuPFFQjT12tjbgjapAxXddRdcFOfVzmkk7dSY9CnsYLlONZ85Yp+8aOXabkvrXy+VIGvs/xeugHqiu2WWbt9FgNWmiIn3ifOyEeibltJqVoMN/LKwIDAQAB",
   "name":"TYPEBEAT",
   "description": "an extention for quick youtube to mp3 converison",
   "version": "1.0",
-  "content_scripts":[
-    {
-      "js": ["main.js"],
-      "css":["style.css"]
-    }
-  ],
   "permissions": ["https://flipmode.up.railway.app/"],
   "action":{
     "default_popup":"hello.html",
