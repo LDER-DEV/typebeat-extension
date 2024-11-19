@@ -2,11 +2,18 @@
   <link rel="stylesheet" href="./style.css">
   <body>
     <img class="logo"src="typebeat.png">
-    <h1>Paste your youtube link below</h1>
-    <form>
-      <input class='input' type="text"/>
-      <button type="submit">convert to mp3</button>
-    </form>
+    <section id = mainBlock>
+      <h1>Paste your youtube link below</h1>
+      <form>
+        <input class='input' type="text"/>
+        <button type="submit">convert to mp3</button>
+      </form>
+  </section>
+  <section class="hide loading" id="progress">
+    <div class="custom-loader"></div>
+    <h1>converting to mp3<h/1>
+  </section>
+  <span id ='error' class="hide">There was an error with the conversion</span>
   </body>
   <script type="text/javascript" src="./main.js"></script>
 </html>
